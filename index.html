@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>سرچ ماشین‌ها</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-light">
+    <div class="container py-5">
+      <div class="card shadow-sm rounded-4">
+        <div class="card-header bg-primary text-white text-center fs-4">
+          لیست ماشین‌ها
+        </div>
+        <div class="card-body">
+          <div class="mb-4">
+            <input
+              type="text"
+              id="searchInput"
+              class="form-control form-control-lg rounded-pill shadow-sm"
+              placeholder="🔍 جستجو بر اساس نام ماشین..."
+              disabled
+            />
+            <div class="mb-4">
+              <select
+                id="yearFilter"
+                class="form-select form-select-lg rounded-pill shadow-sm"
+                disabled
+              >
+                <option>🔽 فیلتر بر اساس سال ساخت</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table
+              class="table table-hover table-striped align-middle mb-0"
+              id="carsTable"
+            >
+              <thead>
+                <tr>
+                  <th>نام</th>
+                  <th>مدل</th>
+                  <th>سال</th>
+                  <th>رنگ</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
